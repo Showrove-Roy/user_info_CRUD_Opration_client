@@ -7,6 +7,7 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
+      loader: () => fetch("http://localhost:5000/users"),
       element: <Home></Home>,
     },
     {
